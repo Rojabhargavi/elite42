@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.parent {
+  display: flex;
+  background-color: gray;
+  justify-content: flex-end;
+  padding: 10px;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+}
+ul.parent li a:hover {
+  color: red;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  top: 50px;
+  background-color: gray;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.header {
+  background-image: url("../images.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.content {
+  padding: 10px;
+}
+.content .productes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.content .productes li {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.content .productes li button {
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  background-color: black;
+  color: red;
+}
+.content .productes li img {
+  position: absolute;
+  left: 80px;
+  bottom: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, 50%);
+}
+.content .productes p {
+  text-align: center;
+  color: red;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */
